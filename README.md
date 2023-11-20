@@ -4,6 +4,11 @@ Bluesky has 2M users, so not small but not huge. It can't replace Facebook and T
 ### Data Rate: ~0.5-1GB/min (added/removed posts, profile updates)
 ### Data Rate: 2GB/min+ (full data, including +likes, etc.)
 ---
+## --> How to run <--
+````
+dart run firehose.dart
+````
+---
 ## Requirements
 - Dart: [Here is how to install dart](https://dart.dev/get-dart). [Here is a tutorial for dart](https://dart.dev/tutorials/server/get-started).
 Note: this appears to require root permission to install
