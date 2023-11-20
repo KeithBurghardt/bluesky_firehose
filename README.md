@@ -41,6 +41,7 @@ Note: this appears to require root permission to install
 - pubspec.lock: keep this when running dart
 - pubspec.yaml: keep this when running firehose.dart. It lists dependencies/requirements mentioned above
 - run_firehose.bash: robustly run firehose.dart/firehose_simple.dart, in case you run into errors.
+  
 I found in earlier code that there is an error that, as far as I can tell, is in the API itself: "RangeError (index): Index out of range: no indices are valid: 0". This will kill the DART program, but that's not a huge issue (while true: dart run firehose.dart in Python or Bash would easily solve this) 
 
 The second issue is that the API appears to hang at random. You won't get an error and the program will not quit. I therefore check every second to see if a file is being updated. If not, I kill the program, if it has not been killed, and restart
