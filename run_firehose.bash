@@ -1,5 +1,5 @@
-# kill program if file has not been updated in 2 seconds
-timeout=2
+# kill program if file has not been updated in 10 seconds
+timeout=10
 while :
     do
         # run rrehose.dart
