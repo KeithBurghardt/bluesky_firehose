@@ -1,4 +1,3 @@
-# bluesky_firehose
 Code to download data from Bluesky firehose
 ---
 
