@@ -4,13 +4,13 @@ import 'dart:core';
 import 'package:bluesky/bluesky.dart';
 
 Future<String> get _localPath async {
-  return '/Users/keith/Downloads/';//directory.path;
+  return '/data/keith/firehose_code_updated/bluesky_data/';//directory.path;
 }
 
 Future<File> get _localFile async {
   final path = await _localPath;
   String time_str = DateTime.now().millisecondsSinceEpoch.toString();
-  return File('$path/bluesky_firehose_'+time_str+'.txt');
+  return File(path+'bluesky_firehose_'+time_str+'.txt');
 }
 
 
