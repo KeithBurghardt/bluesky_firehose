@@ -41,6 +41,8 @@ Note: this appears to require root permission to install
 - pubspec.lock: keep this when running dart
 - pubspec.yaml: keep this when running firehose.dart. It lists dependencies/requirements mentioned above
 - run_firehose.bash: robustly run firehose.dart/firehose_simple.dart, in case you run into errors.
+- periodic_zip.bash: zip files as they finish
+- remove_duplicates.py: a simple program to remove duplicate data within each file and zip the results. This avoids TB-size memory from being used.
   
 I found in earlier code that there is an error that, as far as I can tell, is in the API itself: "RangeError (index): Index out of range: no indices are valid: 0". This will kill the DART program, but that's not a huge issue (while true: dart run firehose.dart in Python or Bash would easily solve this) 
 
